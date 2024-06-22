@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  .containers {
+    display: grid;
+  }
+  .header {
+    grid-area: header;
+    display: flex;
+    background-color: blue;
+    padding: 0px 60px;
+    text-align: center;
+    color: white;
+  }
+
+  .main {
+    grid-area: main;
+    display: grid;
+    justify-items: center;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  .box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transition: 0.3s;
+  }
+.color1 {
+  background-color: red;
+}
+.color2 {
+  background-color: blue;
+}
+.color3 {
+  background-color: green;
+}
+.color4 {
+  background-color: yellow;
+}
+  .footer {
+    grid-area: footer;
+    background-color: #c4a484;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media (min-width: 992px) {
+    /* Media Querie de PC*/
+    .containers {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "main main main"
+        "main  main main"
+        "footer footer footer";
+    }
+    .logo {
+      display: flex;
+      font-size: 1.5rem;
+    }
+    .borger {
+      display: none;
+    }
+  }

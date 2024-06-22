@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/5e3573f07d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <title>Desafio de Funciones</title>
+  </head>
+  <body>
+    <div class="containers">
+      <div class="header">
+        <div>
+          <h1 id="nombre" onclick="pintar();">
+            Si me haces click cambiare de color a verde, a no ser que definas otro
+          </h1>
+        </div>
+      </div>
+      <div class="main">
+        <div id="c1" class="box color1" onclick="pintarFondo('c1',);"></div>
+        <div id="c2" class="box color2" onclick="pintarFondo('c2',);"></div>
+        <div id="c3" class="box color3" onclick="pintarFondo('c3',);"></div>
+        <div id="c4" class="box color4" onclick="pintarFondo('c4',);"></div>
+        <div id="key" class="box"><p>soy magico</p></div>
+      </div>
+      <div class="footer">
+        <p><i class="fa-regular fa-copyright"></i>By Tomás Corvalan</p>
+        <i class="fa-brands fa-facebook"></i
+        ><i class="fa-brands fa-instagram"></i
+        ><i class="fa-brands fa-github"></i>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
